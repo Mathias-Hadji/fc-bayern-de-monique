@@ -3,6 +3,7 @@ import "./App.css";
 import ScorersTable from "./components/ScorersTable";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase/firebaseConfig";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
     const [players, setPlayers] = useState([]);
@@ -24,6 +25,7 @@ function App() {
         <div className="App">
             <h1>Bayern de Monique saison 2024-2025</h1>
             <ScorersTable players={players} />
+            <SpeedInsights />
         </div>
     );
 }
