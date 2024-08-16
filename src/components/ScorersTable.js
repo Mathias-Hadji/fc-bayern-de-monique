@@ -3,6 +3,7 @@ function ScorersTable({ players }) {
         <table>
             <thead>
                 <tr>
+                    <th>#</th>
                     <th>Joueur</th>
                     <th>Nombre de Buts</th>
                     <th>Nombre de Passes décisives</th>
@@ -15,8 +16,9 @@ function ScorersTable({ players }) {
                             playerA.goalNumber - playerB.goalNumber
                     )
                     .reverse()
-                    .map((player) => (
+                    .map((player, index) => (
                         <tr key={player.id}>
+                            <td>{index + 1}</td>
                             <td>{player.playerName}</td>
                             <td>{player.goalNumber}</td>
                             <td>{player.assistNumber}</td>
