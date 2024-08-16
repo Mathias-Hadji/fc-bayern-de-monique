@@ -23,7 +23,7 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Bayern de Monique</h1>
+            <h1>FC Bayern de Monique</h1>
             <h2>Saison 2024-2025</h2>
             <ScorersTable players={players} />
             <SpeedInsights />
