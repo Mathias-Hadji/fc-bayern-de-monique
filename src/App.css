@@ -10,7 +10,13 @@ body {
 
 .App {
     text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
 }
 
 h1 {
@@ -27,7 +33,8 @@ h2 {
 }
 
 .logo {
-    width: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 table {
