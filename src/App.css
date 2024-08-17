@@ -16,6 +16,7 @@ body {
 }
 
 .content {
+    margin-top: 25px;
     flex: 1;
 }
 
@@ -25,6 +26,7 @@ h1 {
     color: #ffffff;
     letter-spacing: 1.5rem;
     font-size: 3.3rem;
+    margin-top: 0;
 }
 
 h2 {
@@ -78,4 +80,12 @@ button {
 
 button:hover {
     background-color: #444444;
+}
+
+
+@media (max-width: 1120px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 1rem; 
+    }
 }
