@@ -3,7 +3,7 @@ import "./App.css";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase/firebaseConfig";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import TeamTable from "./components/ScorersTable";
+import TeamTable from "./components/TeamTable";
 
 function App() {
     const [players, setPlayers] = useState([]);
