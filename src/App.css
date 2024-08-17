@@ -9,7 +9,8 @@ body {
 
     background-image: url("./assets/bayern-de-monique-team.JPG");
     background-size: cover;
-    background-position: center;
+    background-position: 25% 75%;
+    background-position: 50% 15%;
     background-repeat: no-repeat;
 }
 
@@ -32,9 +33,8 @@ body {
 }
 
 .content {
-    margin-top: 25px;
+    margin-top: 15px;
     flex: 1;
-
     z-index: 1;
 }
 
@@ -43,7 +43,7 @@ h1 {
     font-weight: 400;
     color: #ffffff;
     letter-spacing: 1.5rem;
-    font-size: 3.3rem;
+    font-size: 2.4rem;
     margin-top: 0;
 }
 
@@ -53,8 +53,8 @@ h2 {
 }
 
 .logo {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 table {
@@ -62,7 +62,7 @@ table {
     max-width: 600px;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #1e1e1e;
+    background-color: #20202596;
 }
 
 th,
@@ -85,24 +85,17 @@ tr:hover {
     background-color: #333333;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #333333;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #444444;
-}
-
 @media (max-width: 1120px) {
     h1 {
         font-size: 2rem;
+        letter-spacing: 1rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 1.6rem;
         letter-spacing: 1rem;
     }
 }
