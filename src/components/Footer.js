@@ -10,7 +10,7 @@ function Footer({ lastUpdated }) {
                         hour: "2-digit",
                         minute: "2-digit",
                     })}{" "}
-                    - Mathias Hadji
+                    © Mathias Hadji
                 </p>
             )}
         </footer>

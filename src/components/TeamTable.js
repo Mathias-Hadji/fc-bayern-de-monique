@@ -5,8 +5,8 @@ function TeamTable({ players }) {
                 <tr>
                     <th>#</th>
                     <th>Joueur</th>
-                    <th>Nombre de Buts</th>
-                    <th>Nombre de Passes décisives</th>
+                    <th>Buts</th>
+                    <th>Passes décisives</th>
                 </tr>
             </thead>
             <tbody>

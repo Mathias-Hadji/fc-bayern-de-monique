@@ -23,7 +23,7 @@ function App() {
             const latestUpdate = playersData.reduce((latest, player) => {
                 const playerUpdate = player.lastUpdated?.toDate(); // Convertir le timestamp Firestore en Date
                 return playerUpdate > latest ? playerUpdate : latest;
-            }, new Date(0)); 
+            }, new Date(0));
 
             setLastUpdated(latestUpdate);
         }
@@ -33,6 +33,7 @@ function App() {
 
     return (
         <div className="App">
+            <div className="overlay"></div>
             <div className="content">
                 <div className="title-container">
                     <img src={logo} alt="Logo" className="logo" />
@@ -42,7 +43,6 @@ function App() {
                 <TeamTable players={players} />
             </div>
             <Footer lastUpdated={lastUpdated} />
-
             <SpeedInsights />
         </div>
     );
