@@ -13,7 +13,7 @@ function App() {
             const querySnapshot = await getDocs(collection(db, "players"));
             const playersData = querySnapshot.docs.map((doc) => ({
                 id: doc.id,
-                ...doc.data(), // Extraire les champs 'goalNumber' et 'playerName' pour chaque document
+                ...doc.data(),
             }));
             setPlayers(playersData);
         }
@@ -24,7 +24,7 @@ function App() {
     return (
         <div className="App">
             <h1>FC Bayern de Monique</h1>
-            <h2>Saison 2024-2025</h2>
+            <h2>Statistiques pour la saison 2024-2025</h2>
             <ScorersTable players={players} />
             <SpeedInsights />
         </div>
