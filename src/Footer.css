@@ -12,3 +12,10 @@ footer {
 footer p {
     margin: 0;
 }
+
+
+@media (max-width: 450px) {
+    p {
+        font-size: 0.7rem;
+    }
+}
