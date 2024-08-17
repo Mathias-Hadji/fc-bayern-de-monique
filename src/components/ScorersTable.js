@@ -1,4 +1,4 @@
-function ScorersTable({ players }) {
+function TeamTable({ players }) {
     return (
         <table>
             <thead>
@@ -29,4 +29,4 @@ function ScorersTable({ players }) {
     );
 }
 
-export default ScorersTable;
+export default TeamTable;

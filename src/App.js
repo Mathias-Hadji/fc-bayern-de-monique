@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import ScorersTable from "./components/ScorersTable";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase/firebaseConfig";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import TeamTable from "./components/ScorersTable";
 
 function App() {
     const [players, setPlayers] = useState([]);
@@ -25,7 +25,7 @@ function App() {
         <div className="App">
             <h1>FC Bayern de Monique</h1>
             <h2>Statistiques pour la saison 2024-2025</h2>
-            <ScorersTable players={players} />
+            <TeamTable players={players} />
             <SpeedInsights />
         </div>
     );
