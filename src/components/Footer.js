@@ -5,7 +5,8 @@ function Footer({ lastUpdated }) {
         <footer>
             {lastUpdated && (
                 <p>
-                    Dernière mise à jour le {lastUpdated.toLocaleDateString()} à{" "}
+                    Dernière mise à jour du classement le{" "}
+                    {lastUpdated.toLocaleDateString()} à{" "}
                     {lastUpdated.toLocaleTimeString([], {
                         hour: "2-digit",
                         minute: "2-digit",
